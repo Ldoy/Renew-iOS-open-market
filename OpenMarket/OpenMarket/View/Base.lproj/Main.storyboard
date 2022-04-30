@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jqq-Ra-QPz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jqq-Ra-QPz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -113,7 +113,7 @@
                     <navigationItem key="navigationItem" title="야아 마켓" id="tin-6W-8Hb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="apb-fq-jDR">
                             <connections>
-                                <segue destination="I6c-p5-ah2" kind="show" id="TNb-2C-bOk"/>
+                                <segue destination="caH-lH-7rj" kind="presentation" id="YoS-qK-kQO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -126,21 +126,20 @@
             </objects>
             <point key="canvasLocation" x="807.24637681159425" y="-14.0625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ChN-j6-MlR">
+        <!--New Item Adding View Controller-->
+        <scene sceneID="GpI-rl-Nx8">
             <objects>
-                <viewController id="I6c-p5-ah2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RF2-88-2RR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="caH-lH-7rj" customClass="NewItemAddingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9so-Su-dnh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="60k-3D-YUw"/>
+                        <viewLayoutGuide key="safeArea" id="nXm-PJ-fef"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MrL-Bg-zUA"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jIl-PH-aaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTq-Q5-y2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-14"/>
+            <point key="canvasLocation" x="1650.7246376811595" y="-14.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1q0-XU-7py">

@@ -25,7 +25,9 @@
 		A830331226D7B6A200EA30DC /* OpenMarketImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830331126D7B6A200EA30DC /* OpenMarketImageCache.swift */; };
 		A848422226C651DE00DEBDB6 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A848422126C651DE00DEBDB6 /* Media.swift */; };
 		A848422526C6564300DEBDB6 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A848422426C6564300DEBDB6 /* NameSpace.swift */; };
+		A8622791281D27B300CBFF71 /* NewItemAddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */; };
 		A8CD08C526C23B8E00E14FDD /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD08C426C23B8E00E14FDD /* ParsingManager.swift */; };
+		A8F4E131281D2C7A0033AD6E /* ChangingItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */; };
 		C70FB0FB25BEF61C00C9924E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */; };
 		C70FB0FD25BEF61C00C9924E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */; };
 		C70FB0FF25BEF61C00C9924E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FB0FE25BEF61C00C9924E /* ViewController.swift */; };
@@ -65,7 +67,9 @@
 		A830331126D7B6A200EA30DC /* OpenMarketImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMarketImageCache.swift; sourceTree = "<group>"; };
 		A848422126C651DE00DEBDB6 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		A848422426C6564300DEBDB6 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
+		A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemAddingViewController.swift; sourceTree = "<group>"; };
 		A8CD08C426C23B8E00E14FDD /* ParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManager.swift; sourceTree = "<group>"; };
+		A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingItemListView.swift; sourceTree = "<group>"; };
 		C70FB0F725BEF61C00C9924E /* OpenMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				C70FB10025BEF61C00C9924E /* Main.storyboard */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				74F6611926CF91EC00801075 /* OpenMarketItemCell.swift */,
+				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C70FB0FE25BEF61C00C9924E /* ViewController.swift */,
+				A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,7 +356,9 @@
 				A830331226D7B6A200EA30DC /* OpenMarketImageCache.swift in Sources */,
 				74F6611D26CF9B5A00801075 /* StrockLabel.swift in Sources */,
 				7442F9F226D4DE6000357F3B /* DigitStyle.swift in Sources */,
+				A8F4E131281D2C7A0033AD6E /* ChangingItemListView.swift in Sources */,
 				744948E126D886A3008C897D /* ImageLoader.swift in Sources */,
+				A8622791281D27B300CBFF71 /* NewItemAddingViewController.swift in Sources */,
 				C70FB0FF25BEF61C00C9924E /* ViewController.swift in Sources */,
 				A8CD08C526C23B8E00E14FDD /* ParsingManager.swift in Sources */,
 				A830330C26D4BD8800EA30DC /* LayoutGenerator.swift in Sources */,

@@ -37,7 +37,8 @@ extension OpenMarketDataSource: UICollectionViewDataSource {
         OpenMarketDataSource.openMarketItemList[section].items.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "openMarketCell", for: indexPath) as? OpenMarketItemCell else {
             return UICollectionViewCell()
         }

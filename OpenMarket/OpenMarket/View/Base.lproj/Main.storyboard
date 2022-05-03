@@ -13,7 +13,7 @@
         <!--야아 마켓-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenMarket" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                     <navigationItem key="navigationItem" title="야아 마켓" id="tin-6W-8Hb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="apb-fq-jDR">
                             <connections>
-                                <segue destination="caH-lH-7rj" kind="presentation" id="YoS-qK-kQO"/>
+                                <segue destination="caH-lH-7rj" kind="presentation" id="hMY-Ht-e8l"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -129,17 +129,80 @@
         <!--New Item Adding View Controller-->
         <scene sceneID="GpI-rl-Nx8">
             <objects>
-                <viewController id="caH-lH-7rj" customClass="NewItemAddingViewController" sceneMemberID="viewController">
+                <viewController id="caH-lH-7rj" customClass="NewItemAddingViewController" customModule="OpenMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9so-Su-dnh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-eW-Np4">
+                                <rect key="frame" x="28" y="44" width="359" height="660"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yb8-cV-guy">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="274"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="5cP-rG-Un8"/>
+                                            <constraint firstAttribute="height" constant="274" id="i4F-nr-wfz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyO-83-AVf">
+                                        <rect key="frame" x="0.0" y="294" width="359" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ex-XY-eaF">
+                                        <rect key="frame" x="0.0" y="348" width="359" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vhw-or-jhR">
+                                        <rect key="frame" x="0.0" y="402" width="359" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-Rc-gxf">
+                                        <rect key="frame" x="0.0" y="456" width="359" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ung-TL-amO">
+                                        <rect key="frame" x="0.0" y="510" width="359" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="B9D-BL-Tok"/>
+                                            <constraint firstAttribute="height" constant="150" id="GJR-wH-1sx"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8a-0f-Mb4">
+                                <rect key="frame" x="148" y="762" width="119" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="등록"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nXm-PJ-fef"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ISX-eW-Np4" firstAttribute="leading" secondItem="nXm-PJ-fef" secondAttribute="leading" constant="28" id="2oV-LW-JzB"/>
+                            <constraint firstItem="nXm-PJ-fef" firstAttribute="bottom" secondItem="S8a-0f-Mb4" secondAttribute="bottom" constant="49" id="NZF-2Y-WpY"/>
+                            <constraint firstItem="nXm-PJ-fef" firstAttribute="trailing" secondItem="S8a-0f-Mb4" secondAttribute="trailing" constant="147" id="Nok-fi-0JD"/>
+                            <constraint firstItem="nXm-PJ-fef" firstAttribute="trailing" secondItem="ISX-eW-Np4" secondAttribute="trailing" constant="27" id="Qh7-gj-KNE"/>
+                            <constraint firstItem="S8a-0f-Mb4" firstAttribute="leading" secondItem="nXm-PJ-fef" secondAttribute="leading" constant="148" id="WXW-B5-C13"/>
+                            <constraint firstItem="nXm-PJ-fef" firstAttribute="top" secondItem="ISX-eW-Np4" secondAttribute="top" id="uQT-Jh-S5V"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="A64-gW-2fZ"/>
+                    <connections>
+                        <outlet property="currencyPickerView" destination="Ung-TL-amO" id="6NS-y9-CBk"/>
+                        <outlet property="discountedPriceTextField" destination="Vhw-or-jhR" id="w5Q-10-2Fi"/>
+                        <outlet property="priceTextField" destination="3ex-XY-eaF" id="ftN-mD-XYt"/>
+                        <outlet property="stockTextField" destination="uKe-Rc-gxf" id="5DI-ug-Myl"/>
+                        <outlet property="thumbnails" destination="yb8-cV-guy" id="5Dz-Vo-JTp"/>
+                        <outlet property="titleTextField" destination="qyO-83-AVf" id="cCO-5o-1PS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTq-Q5-y2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="-14.0625"/>
+            <point key="canvasLocation" x="1760.8695652173915" y="-14.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1q0-XU-7py">

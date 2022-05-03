@@ -9,12 +9,15 @@ import Foundation
 
 struct OpenMarketLoadData {
     //MARK: Request Method
-    static func requestOpenMarketMainPageData(page: String, completionHandler: @escaping (OpenMarketItems) -> ()) {
+    static func requestOpenMarketMainPageData(page: String,
+                                              completionHandler: @escaping (OpenMarketItems) -> ()) {
         guard let url = URL(string: String(describing: OpenMarketUrl.listLookUp) + page) else {
             return
         }
         
-        NetworkManager.request(httpMethod: .get, url: url, body: nil, .json) { result in
+        NetworkManager.request(httpMethod: .get,
+                               url: url,
+                               body: nil, .json) { result in
             switch result {
             case .success(let data):
                 guard let jsonItem = try? ParsingManager.jsonDecode(data: data, type: OpenMarketItems.self) else {

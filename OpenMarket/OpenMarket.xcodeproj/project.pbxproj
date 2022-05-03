@@ -186,7 +186,6 @@
 				C70FB10025BEF61C00C9924E /* Main.storyboard */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				74F6611926CF91EC00801075 /* OpenMarketItemCell.swift */,
-				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +193,7 @@
 		A84FE1EE26CB8BBC001BB378 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 				C70FB0FE25BEF61C00C9924E /* ViewController.swift */,
 				A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */,
 			);

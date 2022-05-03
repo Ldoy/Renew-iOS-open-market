@@ -13,7 +13,9 @@ class ImageLoader {
 
 extension ImageLoader {
     //MARK: Method
-    func downloadImage(reqeustURL: String?, imageCachingKey: Int, _ completionHandler: @escaping (UIImage) -> ()) -> UUID? {
+    func downloadImage(reqeustURL: String?,
+                       imageCachingKey: Int,
+                       _ completionHandler: @escaping (UIImage) -> ()) -> UUID? {
         
         if let image = ImageCacher.shared.pullImage(forkey: imageCachingKey) {
             completionHandler(image)

@@ -18,6 +18,7 @@ class OpenMarketDataSource: NSObject {
         
         OpenMarketLoadData.requestOpenMarketMainPageData(page: "1") { openMarketItems in
             OpenMarketDataSource.openMarketItemList = [openMarketItems]
+            //print(openMarketItems)
         }
         
         //MARK: Stop initializing OpenMarketDataSource instance until get openMarketItemList

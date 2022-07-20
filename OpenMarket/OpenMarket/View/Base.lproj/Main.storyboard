@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--야아 마켓-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenMarket" sceneMemberID="viewController">
@@ -100,6 +100,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3up-qh-Jd3">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -110,7 +117,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DkT-th-TE4" secondAttribute="bottom" id="svL-j0-SmL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="야아 마켓" id="tin-6W-8Hb">
+                    <navigationItem key="navigationItem" id="tin-6W-8Hb">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="213-DS-w0H" customClass="OpenMarketSegmentedControl" customModule="OpenMarket" customModuleProvider="target">
+                            <rect key="frame" x="141.5" y="6" width="131" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="apb-fq-jDR">
                             <connections>
                                 <segue destination="caH-lH-7rj" kind="presentation" id="hMY-Ht-e8l"/>
@@ -120,6 +137,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="U0q-WP-Drt" id="Hj5-Xa-nUM"/>
                         <outlet property="collectionView" destination="DkT-th-TE4" id="AHz-UD-sAa"/>
+                        <outlet property="openMarketSegmentedControl" destination="213-DS-w0H" id="Jcu-b0-Mwq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -202,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTq-Q5-y2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8695652173915" y="-14.0625"/>
+            <point key="canvasLocation" x="1603" y="-485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1q0-XU-7py">
@@ -224,6 +242,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

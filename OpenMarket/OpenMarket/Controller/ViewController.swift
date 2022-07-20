@@ -9,6 +9,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var openMarketSegmentedControl: OpenMarketSegmentedControl!
     
     //MARK: Property
     private let openMarketDataSource = OpenMarketDataSource()
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
         //MARK: Set Loading Indicater Style And Start
         setIndicatorStyle()
         activityIndicator.startAnimating()
+        setSegmentControl()
+        
         
         //MARK: Assign Datasource and Layout
         collectionView.dataSource = openMarketDataSource
@@ -50,5 +53,15 @@ extension ViewController {
     @objc func nofityImageDownload() {
         activityIndicator.stopAnimating()
         NotificationCenter.default.removeObserver(self, name: .imageDidDownload, object: nil)
+    }
+}
+
+extension ViewController {
+    private func setSegmentControl() {
+        self.openMarketSegmentedControl
+            .setTitle("List", forSegmentAt: 0)
+        self.openMarketSegmentedControl
+            .setTitle("Item", forSegmentAt: 1)
+
     }
 }

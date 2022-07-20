@@ -44,7 +44,9 @@ extension OpenMarketDataSource: UICollectionViewDataSource {
         }
         
         //MARK: Cell's Item ID and Thubmnail Url
-        let currentItem = Self.openMarketItemList[indexPath.section].items[indexPath.item]
+        let currentItem = Self
+            .openMarketItemList[indexPath.section]
+            .items[indexPath.item]
         let urlString = currentItem.thumbnails.first
         let idNumber = currentItem.id
         
@@ -53,7 +55,9 @@ extension OpenMarketDataSource: UICollectionViewDataSource {
         let taskIdentifier = imageLoader.downloadImage(reqeustURL: urlString, imageCachingKey: idNumber) { downloadImage in
             DispatchQueue.main.async {
                 if self.isImageDownload == false {
-                    NotificationCenter.default.post(name: .imageDidDownload, object: nil)
+                    NotificationCenter
+                        .default
+                        .post(name: .imageDidDownload, object: nil)
                     self.isImageDownload = true
                 }
                 
@@ -70,7 +74,6 @@ extension OpenMarketDataSource: UICollectionViewDataSource {
         }
         
         cell.isHidden = true
-        
         return cell
     }
 }

@@ -52,6 +52,3 @@ extension ViewController {
         NotificationCenter.default.removeObserver(self, name: .imageDidDownload, object: nil)
     }
 }
-
-extension UIViewController {
-}

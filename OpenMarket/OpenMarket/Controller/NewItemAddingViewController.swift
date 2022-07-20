@@ -45,9 +45,6 @@ class NewItemAddingViewController: UIViewController, ChangingItemListView, UIPic
                     forComponent component: Int) -> String? {
         return pickerViewData[row]
     }
-    
-    
-    
 }
 
 class CurrencyPickerViewDataSource: NSObject, UIPickerViewDataSource {

@@ -144,6 +144,7 @@
 		74F6611B26CF9B3600801075 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 				74F6611C26CF9B5A00801075 /* StrockLabel.swift */,
 				7442F9F126D4DE6000357F3B /* DigitStyle.swift */,
 			);
@@ -200,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				A830330D26D7B3AD00EA30DC /* Delegate */,
-				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 				C70FB0FE25BEF61C00C9924E /* ViewController.swift */,
 				A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */,
 			);

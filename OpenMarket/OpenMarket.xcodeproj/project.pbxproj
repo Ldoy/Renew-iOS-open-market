@@ -101,12 +101,14 @@
 		74E0027A26C2380F0094ED88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74E0027B26C238550094ED88 /* OpenMarketItems.swift */,
+				A830331026D7B68400EA30DC /* Cache */,
+				74F6611626CF80D700801075 /* Data */,
 				A8CD08C426C23B8E00E14FDD /* ParsingManager.swift */,
 				74F1B97F26C643BE00BE3812 /* NetworkManager.swift */,
 				A848422126C651DE00DEBDB6 /* Media.swift */,
 				74579EF226CB79C0000788D4 /* ItemDeleteEncodeType.swift */,
 				7442F9EF26D4B69500357F3B /* HTTPBodyMaker.swift */,
+				74E0027B26C238550094ED88 /* OpenMarketItems.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,9 +185,13 @@
 		A84FE1ED26CB8BB5001BB378 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				74F6611B26CF9B3600801075 /* Protocol */,
+				A830330A26D4BCF900EA30DC /* Layout */,
 				C70FB10025BEF61C00C9924E /* Main.storyboard */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				74F6611926CF91EC00801075 /* OpenMarketItemCell.swift */,
+				C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */,
+				C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 		A84FE1EE26CB8BBC001BB378 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A830330D26D7B3AD00EA30DC /* Delegate */,
 				A8F4E130281D2C7A0033AD6E /* ChangingItemListView.swift */,
 				C70FB0FE25BEF61C00C9924E /* ViewController.swift */,
 				A8622790281D27B300CBFF71 /* NewItemAddingViewController.swift */,
@@ -221,20 +228,13 @@
 		C70FB0F925BEF61C00C9924E /* OpenMarket */ = {
 			isa = PBXGroup;
 			children = (
-				A830331026D7B68400EA30DC /* Cache */,
-				A830330D26D7B3AD00EA30DC /* Delegate */,
-				A830330A26D4BCF900EA30DC /* Layout */,
-				74F6611B26CF9B3600801075 /* Protocol */,
-				74F6611626CF80D700801075 /* Data */,
+				C70FB10825BEF61D00C9924E /* Info.plist */,
+				C70FB10325BEF61D00C9924E /* Assets.xcassets */,
+				74F1B98126C64C0700BE3812 /* Extension */,
+				A848422326C6563300DEBDB6 /* PlaceHolder */,
 				74E0027A26C2380F0094ED88 /* Model */,
 				A84FE1ED26CB8BB5001BB378 /* View */,
 				A84FE1EE26CB8BBC001BB378 /* Controller */,
-				74F1B98126C64C0700BE3812 /* Extension */,
-				A848422326C6563300DEBDB6 /* PlaceHolder */,
-				C70FB10825BEF61D00C9924E /* Info.plist */,
-				C70FB0FA25BEF61C00C9924E /* AppDelegate.swift */,
-				C70FB0FC25BEF61C00C9924E /* SceneDelegate.swift */,
-				C70FB10325BEF61D00C9924E /* Assets.xcassets */,
 			);
 			path = OpenMarket;
 			sourceTree = "<group>";
